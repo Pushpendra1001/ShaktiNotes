@@ -1,0 +1,157 @@
+body{
+  margin:0;
+  font-family: "System UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:black;
+}
+
+.app{
+  display:flex;
+  min-height:100vh;
+}
+
+.sidebar{
+  width:25%;
+  background:black;
+  border-right: 1px solid white;
+  color:white;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+
+.sidebar button{
+  background:#222;
+  border:none;
+  padding:9px 8px;
+  color: rgba(128, 128, 128, 0.484);
+  border-radius: 10px;
+}
+
+.sidebar button.active{
+  color:white;
+}
+
+.add-btn{
+  margin-top:auto;
+  background:teal !important;
+  color:white !important;
+}
+
+.content{
+  flex:1;
+  padding : 10px 20px;
+}
+
+
+.notes-list{
+  margin-top:18px;
+  display:grid;
+  grid-gap:12px;
+  grid-template-columns:repeat(auto-fill, minmax(200px,1fr));
+}
+
+.top-bar{
+  color: white;
+}
+
+
+.notes-list{
+  color: white;
+}
+
+
+.note-card{
+  /* background: white; */
+  border: 1px solid white;
+
+  padding:0px 15px 30px 15px;
+  border-radius:10px;
+  color: white;
+}
+
+.row{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+
+.del{
+  background:none;
+  border:none;
+  color:red;
+  font-size:13px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+
+.overlay{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  transform: translate(-50% , -50%);
+  background:rgba(0,0,0,0.45);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.popup{
+  background:black;
+  border: 1px solid white;
+  color: white;
+  padding:15px 20px;
+  width:280px;
+  border-radius:8px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.input{
+  padding:10px;
+  border:1px solid white;
+}
+
+.actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
+
+.secondary{
+  background:#ccc !important;
+  color:#222 !important;
+}
+
+.btn{
+  padding:8px 12px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  background:teal;
+  color:white;
+}
+
+
+@media(max-width:700px){
+  .app{
+    flex-direction:column;
+  }
+
+  .sidebar{
+    width:100%;
+    flex-direction:row;
+    padding:10px;
+  }
+
+  .content{
+    padding:15px;
+  }
+  .notes-list{
+    grid-template-columns:1fr;
+  }
+}
