@@ -7,7 +7,7 @@ export default function App() {
 
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
-  const [category, setCategory] = useState("Work");
+  const [category, setCategory] = useState("Study");
 
 
 
@@ -38,7 +38,7 @@ export default function App() {
       setEditId(null);
       setTitle("");
       setDesc("");
-      setCategory("Work");
+      setCategory("Study");
     }
   }
 
@@ -191,7 +191,7 @@ export default function App() {
               <option>Study</option>
               <option>Personal</option>
               <option>College</option>
-               <option>Idaes</option>
+               <option>Ideas</option>
               <option>Meetings</option>
             </select>
 
