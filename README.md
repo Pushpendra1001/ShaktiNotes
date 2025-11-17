@@ -22,6 +22,12 @@ It's a intresting Notes app where you can write your task and track them you can
 3. Run 
    npm run dev
 
+Screenshots :
+<img width="1225" height="862" alt="image" src="https://github.com/user-attachments/assets/124b36dc-2474-44f8-b6ae-96d46b309172" />
+<img width="1783" height="748" alt="image" src="https://github.com/user-attachments/assets/c76da21f-5be7-4ecf-8af9-40fa61c55972" />
+
+
+
 
 
 Wallah Wallah Your Project is Running likho aab meeting kb hai 
